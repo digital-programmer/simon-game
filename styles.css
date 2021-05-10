@@ -50,3 +50,19 @@ body {
   box-shadow: 0 0 20px white;
   background-color: grey;
 }
+
+#start {
+  border-radius: 10%;
+  height: 70px;
+  width: 150px;
+  font-size: 1rem;
+  border: 10px solid black;
+  font-family: "Press Start 2P", cursive;
+  line-height: 1.2rem;
+  margin-top: 2rem;
+}
+
+#start:active {
+  box-shadow: 0 0 20px white;
+  transform: translateY(5px);
+}

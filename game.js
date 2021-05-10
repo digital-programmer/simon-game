@@ -11,13 +11,16 @@ var isGameStarted = false;
 var level = 0;
 
 
-document.addEventListener('keydown',function(){
+document.addEventListener('keydown',startGame);
+document.getElementById("start").addEventListener("click",startGame);
+
+function startGame(){
     if(!isGameStarted){
         $("#level-title").text("Level "+level);
         nextSequence();
         isGameStarted = true;
     }
-});
+}
 
 function handleClick(){
     if(isGameStarted){
