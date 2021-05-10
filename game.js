@@ -20,11 +20,13 @@ document.addEventListener('keydown',function(){
 });
 
 function handleClick(){
-    var userChosenColor = this.id;
-    userClickedPattern.push(userChosenColor);
-    playSound(userChosenColor);
-    animatePress(userChosenColor);
-    checkAnswer(userClickedPattern.length-1);
+    if(isGameStarted){
+        var userChosenColor = this.id;
+        userClickedPattern.push(userChosenColor);
+        playSound(userChosenColor);
+        animatePress(userChosenColor);
+        checkAnswer(userClickedPattern.length-1);
+    }
 }
 
 function nextSequence(){
